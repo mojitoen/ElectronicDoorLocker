@@ -16,5 +16,9 @@ io.on('connection', (socket) => {
 
     //Følgende linje burde hente IP-addresse, men aner ikke om den gjør noe som helst
     console.log("Origin address: ", socket.request.connection.remoteAddress)
-    
+
+    socket.on("code", (receivedCode) => {
+        console.log(receivedCode)
+    })
+
 })
