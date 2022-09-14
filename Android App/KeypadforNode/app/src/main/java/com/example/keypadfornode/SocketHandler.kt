@@ -11,7 +11,7 @@ object SocketHandler {
     @Synchronized
     fun setSocket() {
         try {
-            mSocket = IO.socket("http://10.0.0.178:3000")
+            mSocket = IO.socket("http://10.0.0.181:3000")
             Log.i(TAG, "Connected to opplegg")
         } catch (e:URISyntaxException) {
             Log.i(TAG, "Failed to connect to socket")
