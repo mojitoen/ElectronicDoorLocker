@@ -1,6 +1,6 @@
 # Electronic Door Lock
 # Documenting the journey
-14.09.2022
+# 14.09.2022
 In an attempt to better my understanding of electronics and it's connection to code, i'm attempting to build a cheap, affordable electronic door lock which will connect 
 to a keypad(digital, kotlin based app). 
 
