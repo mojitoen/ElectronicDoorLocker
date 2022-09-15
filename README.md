@@ -27,6 +27,7 @@ After adding a few functions to the authentication server it turned out the ardu
 ![image](https://user-images.githubusercontent.com/66651087/190281506-ff7cbd82-adbf-41ba-8a49-1ccc4fe33923.png)
 Using the node package onoff, it's possible to change the GPIO board to whatever is required.
 After setting up the raspberry pi, installing NPM and importing the project however, there was a short during measuring which meant that the raspberry pi was bricked.
+Measuring the polyfuse does give hope for a functioning R-PI as it reads at about 0.5 ohms. Only time will tell whether this R-PI makes it, but for now i'm gonna need a new one. 
 ![Untitled](https://user-images.githubusercontent.com/66651087/190281773-57e112dc-b5c4-4f21-a572-428b6eee3f02.png)
 Using the multimeter before short however allowed us to confirm that the code did indeed work for going HIGH.
 A new one has been ordered, and i assume we'll see it in a few days. 
