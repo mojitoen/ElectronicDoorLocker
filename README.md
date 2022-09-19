@@ -32,3 +32,8 @@ Measuring the polyfuse does give hope for a functioning R-PI as it reads at abou
 Using the multimeter before short however allowed us to confirm that the code did indeed work for going HIGH.
 A new one has been ordered, and i assume we'll see it in a few days. 
 Next wrinkle will be to stop codes from being sent in cleartext. 
+
+# 18.09.2022
+With the help of my good friend and former colleague Robert, a few pins were measured on the Raspberry Pi, and the conclusion was that the 3v3 pin and one of the 5v pins on the GPIO board must have shorted, because there is a lack of a voltage on the 3v3 line. This is the MXL7704, and is widely thought to be very hard to replace, meaning that the replacement Pi is going to be necessary after all. 
+![image](https://user-images.githubusercontent.com/66651087/191085251-6b73c44a-7373-4885-b5d5-f840d9919b3f.png)
+
