@@ -22,4 +22,18 @@ Pressing the star button when you have 4 digits will allow you to send the code.
 ![306308611_770384877351010_7641461173645428123_n](https://user-images.githubusercontent.com/66651087/190223600-2c311db6-66b2-4b69-8856-3a818d9c3b68.jpg)
 ![image](https://user-images.githubusercontent.com/66651087/190223653-4ef60c6c-d19a-4a74-8647-cd9ed0fc1f5c.png)
 
+# 15.09.2022
+After adding a few functions to the authentication server it turned out the arduino chip might not be necessary after all. 
+![image](https://user-images.githubusercontent.com/66651087/190281506-ff7cbd82-adbf-41ba-8a49-1ccc4fe33923.png)
+Using the node package onoff, it's possible to change the GPIO board to whatever is required.
+After setting up the raspberry pi, installing NPM and importing the project however, there was a short during measuring which meant that the raspberry pi was bricked.
+Measuring the polyfuse does give hope for a functioning R-PI as it reads at about 0.5 ohms. Only time will tell whether this R-PI makes it, but for now i'm gonna need a new one. 
+![Untitled](https://user-images.githubusercontent.com/66651087/190281773-57e112dc-b5c4-4f21-a572-428b6eee3f02.png)
+Using the multimeter before short however allowed us to confirm that the code did indeed work for going HIGH.
+A new one has been ordered, and i assume we'll see it in a few days. 
+Next wrinkle will be to stop codes from being sent in cleartext. 
+
+# 18.09.2022
+With the help of my good friend and former colleague Robert, a few pins were measured on the Raspberry Pi, and the conclusion was that the 3v3 pin and one of the 5v pins on the GPIO board must have shorted, because there is a lack of a voltage on the 3v3 line. This is the MXL7704, and is widely thought to be very hard to replace, meaning that the replacement Pi is going to be necessary after all. 
+![image](https://user-images.githubusercontent.com/66651087/191085251-6b73c44a-7373-4885-b5d5-f840d9919b3f.png)
 
