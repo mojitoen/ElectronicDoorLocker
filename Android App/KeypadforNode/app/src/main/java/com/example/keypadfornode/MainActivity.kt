@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         var _button9 = findViewById<Button>(R.id.button9)
         var _button0 = findViewById<Button>(R.id.button0)
         var _buttonstar = findViewById<Button>(R.id.buttonstar)
+        var _buttonbiometric = findViewById<Button>(R.id.biometricbutton)
         //-------------------------------------------------
 
         fun pressedNumber(i: String) {
