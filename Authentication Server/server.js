@@ -25,9 +25,9 @@ if (process.platform == "win32") {
 else if (process.platform =="linux") {
 
     //Code for the GPIO board on Raspberry Pi
-    let Gpio = require('onoff').Gpio;
+    var Gpio = require('onoff').Gpio;
     //Defines PIN4 as pin number 4 on the GPIO board
-    let PIN4 = new Gpio(4, 'out')
+    var PIN4 = new Gpio(4, 'out')
     main("linux")
 }
 
