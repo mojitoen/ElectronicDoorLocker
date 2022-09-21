@@ -37,3 +37,18 @@ Next wrinkle will be to stop codes from being sent in cleartext.
 With the help of my good friend and former colleague Robert, a few pins were measured on the Raspberry Pi, and the conclusion was that the 3v3 pin and one of the 5v pins on the GPIO board must have shorted, because there is a lack of a voltage on the 3v3 line. This is the MXL7704, and is widely thought to be very hard to replace, meaning that the replacement Pi is going to be necessary after all. 
 ![image](https://user-images.githubusercontent.com/66651087/191085251-6b73c44a-7373-4885-b5d5-f840d9919b3f.png)
 
+# 20.09.22
+After receiving the arduino, i could get started on testing some physical aspects of the lock.
+My code, however, didn't have support for arduino, only for the GPIO boards on the Raspberry Pi. 
+So, using johhny-five, i added a few if-statements, refactored some code, and got it working on arduino, should the host computer be running on windows. 
+![video](https://user-images.githubusercontent.com/66651087/191385121-1f120a18-5360-49c9-8ea9-012bc667a866.mp4)
+All that remains is testing on Raspberry Pi, which would be more efficient, seeing as the Raspberry Pi can run node on its own whereas the arduino cannot.
+
+An issue i haven't mentioned yet is the voltage level for the electric door. For now, testing wise, 5volts is fine. It's measurable, and can easily light up a small LED. The strike however, needs 12v. 
+My solution has been to order a transistor, and a few battery-sockets. The plan is this: 
+![image](https://user-images.githubusercontent.com/66651087/191386572-53283436-cb80-4144-bc3c-c9595bee55c6.png)
+Hopefully, when the rest of the parts arrive, this will be exactly what i need to finish the project, but before they arrive, we have to make sure the code will run on a raspberry pi. 
+
+
+
+
